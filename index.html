@@ -3,45 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
+<section>
+  <div class="result">
+    <h4>Your Result</h4>
+    <div class="mark">    
+        <span class="value">76</span>
+        <span class="purcent">of 100</span>
+    </div>
+    <h3>Great</h3>
+    <p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+  <div class="details">
+    <h4 class="summary">Summary</h4>
+      <div class="stats">
+        <div class="reaction">
+          <div class="reactionDescription">
+            <img src="./assets/images/icon-reaction.svg">
+            Reaction
+          </div>
+          80 <span class="purcentDetails">/ 100</span>
+        </div>
+        <div class="memory">
+          <div class="memoryDescription">
+        <img src="./assets/images/icon-memory.svg">  
+        Memory
+        </div>
+        92 <span class="purcentDetails">/ 100</span>
+        </div>
+        <div class="verbal">
+          <div class="verbalDescription">
+        <img src="./assets/images/icon-verbal.svg">
+        Verbal
+        </div>
+        61 <span class="purcentDetails">/ 100</span>
+        </div>
+        <div class="visual">
+        <div class="visualDescription">
+        <img src="./assets/images/icon-visual.svg">
+        Visual
+        </div>
+        72 <span class="purcentDetails">/ 100</span>
+        </div>
+      </div>
+      <div class="bouton">
+        <input type="button" value="Continue">
+      </div>
+  </div>
+</section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Krlito0</a>.
   </div>
+<script src="index.js"> </script>
 </body>
 </html>

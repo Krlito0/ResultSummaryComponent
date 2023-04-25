@@ -1,0 +1,235 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary_color:hsl(252, 100%, 67%);
+    --primary_color2:hsl(241, 81%, 54%);
+    --secondary_color:hsla(256, 72%, 46%, 1);
+    --secondary_color2:hsla(241, 72%, 46%, 0);
+    --text_color: hsl(241, 100%, 89%);
+    --text_color2:hsl(0, 0%, 100%);
+    --button_color:#313a5b;
+    --reaction_color:#fff6f5;
+    --reaction_text:hsl(0, 100%, 67%);
+    --memory_color:#fffbf2;
+    --memory_text:hsl(39, 100%, 56%);
+    --verbal_color:#f2fbfa;
+    --verbal_text:hsl(166, 100%, 37%);
+    --visual_color:#f3f3fd;
+    --visual_text: hsl(234, 85%, 45%);
+    --police:HankenGrotesk;
+    
+
+}
+
+*{
+    margin:0px;
+    font-family: var(--police);
+}
+
+.result{
+    background:linear-gradient(var(--primary_color),var(--primary_color2));
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.result>h4{
+    color: var(--text_color);
+    padding: 20px 0  10px 0;
+    text-align: center;
+}
+
+h3{
+    color:var(--text_color2);
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 0 0 0 ;
+}
+
+.mark{
+    background:linear-gradient(var(--secondary_color),var(--secondary_color2));
+    width: 40%;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.value{
+    font-size:60px;
+    font-weight: bold;
+    color: var(--text_color2);
+}
+
+.purcent{
+    color:var(--text_color);
+    font-weight: bold;
+}
+
+.purcentDetails{
+    color:gray;
+    font-weight: bold;
+}
+
+.result>p{
+    text-align: center;
+    color:var(--text_color);
+    font-size:18px;
+    margin: 3% 0 10% 0;
+}
+
+.details{
+    width: 80%;
+    margin: auto;
+}
+
+.summary{
+    margin: 20px 0 20px 0;
+}
+
+.stats> div{
+    margin: 15px 0 0 0;    
+}
+
+.reaction{
+  background-color: var(--reaction_color);
+  padding: 13px; 
+  border-radius: 10px; 
+  display: grid;
+  grid-template: 1fr/6fr 1fr 1fr;
+}
+
+.reactionDescription{
+    color:var(--reaction_text);
+    font-weight: bold;
+}
+
+.memory{
+    background-color: var(--memory_color);
+    padding: 13px;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 1fr/6fr 1fr 1fr;
+}
+
+.memoryDescription{
+    color: var(--memory_text);
+    font-weight: bold;
+}
+
+.verbal{
+    background-color: var(--verbal_color);
+    padding: 13px;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 1fr/6fr 1fr 1fr;
+}
+
+.verbalDescription{
+    color: var(--verbal_text);
+    font-weight: bold;
+}
+
+.visual{
+    background-color: var(--visual_color);
+    padding: 13px;
+    border-radius: 10px;
+    display: grid;
+    grid-template: 1fr/6fr 1fr 1fr;
+}
+
+.visualDescription{
+    color: var(--visual_text);
+    font-weight: bold;
+}
+
+.bouton> input{
+    background-color:var(--button_color) ;
+    color: var(--text_color2);
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 16px;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 376px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        top: 25%;
+        margin: 10%;
+        height: 40%;
+        width: 40%;
+    }
+    .result{
+        margin: 0;
+        width: 35%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .mark{
+        width: 55%;
+    }
+
+    .value{
+        font-size: 50px;
+    }
+
+    .purcent{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .purcentDetails{
+        font-size: 13px;
+        color: grey;
+        font-weight: bold;
+    }
+
+    .details{
+        width: 35%;
+        margin: 0px;
+        padding:0 30px 25px 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(38, 10, 195, 0.099) , 0 6px 20px 0 rgba(43, 69, 186, 0.142);   
+    }
+
+    .bouton>input{
+        margin-bottom: 20px;
+    }
+
+    .bouton>input:hover{
+        background-color: var(--primary_color2);
+    }
+
+    .reaction, .memory, .verbal, .visual{ 
+        grid-template: 1fr/4fr 1fr 1fr;
+        padding: 8px;
+    }
+
+    .result>p{
+        font-size: 14px;
+    }
+
+}
