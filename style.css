@@ -163,7 +163,7 @@ h3{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 400px) {
     body{
         display: flex;
         flex-direction: column;
@@ -171,7 +171,7 @@ h3{
         align-items: center;
     }
     section{
-        display: flex;
+        display: flex; 
         top: 25%;
         margin: 10%;
         height: 40%;
@@ -180,28 +180,26 @@ h3{
     .result{
         margin: 0;
         width: 35%;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
+        padding:0 2vw 2vw 2vw;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .mark{
-        width: 55%;
+        width: 8vw;
     }
 
     .value{
-        font-size: 50px;
+        font-size: 4vw;
     }
 
     .purcent{
-        font-size: 13px;
+        font-size: 0.8vw;
         font-weight: bold;
     }
 
     .purcentDetails{
-        font-size: 13px;
+        font-size: 0.84vw;
         color: grey;
         font-weight: bold;
     }
@@ -209,14 +207,10 @@ h3{
     .details{
         width: 35%;
         margin: 0px;
-        padding:0 30px 25px 30px;
+        padding:0 2vw 2vw 2vw;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         box-shadow: 0 4px 8px 0 rgba(38, 10, 195, 0.099) , 0 6px 20px 0 rgba(43, 69, 186, 0.142);   
-    }
-
-    .bouton>input{
-        margin-bottom: 20px;
     }
 
     .bouton>input:hover{
@@ -225,7 +219,7 @@ h3{
 
     .reaction, .memory, .verbal, .visual{ 
         grid-template: 1fr/4fr 1fr 1fr;
-        padding: 8px;
+        padding: 1vw;
     }
 
     .result>p{

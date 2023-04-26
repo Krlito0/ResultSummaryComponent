@@ -44,8 +44,8 @@ And here we have the Desktop version with the hover on continue button
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://krlito0.github.io/ResultSummaryComponent/]
+
 
 ## My process
 
